@@ -11,7 +11,7 @@ multiple zpools, Bastille will ask which one you want to use. See also
 
 This is the default `bastille.conf` file.
 
-.. code-block:: shell
+.. code-block:: text
 
   #####################
   ## [ BastilleBSD ] ##
@@ -252,7 +252,7 @@ here they are.
 A ``jail.conf`` template is used each time a new container is created. This
 template looks like this:
 
-.. code-block:: shell
+.. code-block:: text
 
   {name} {
     devfs_ruleset = 4;
@@ -276,7 +276,7 @@ template looks like this:
 devfs_ruleset
 ^^^^^^^^^^^^^
 
-.. code-block:: shell
+.. code-block:: text
 
   devfs_ruleset
     The number of the devfs ruleset that is enforced for mounting
@@ -300,7 +300,7 @@ devfs_ruleset
 enforce_statfs
 ^^^^^^^^^^^^^^
 
-.. code-block:: shell
+.. code-block:: text
 
   enforce_statfs
     This determines what information processes in a jail are able to
@@ -319,7 +319,7 @@ enforce_statfs
 exec.clean
 ^^^^^^^^^^
 
-.. code-block:: shell
+.. code-block:: text
 
   exec.clean
     Run commands in a clean environment.  The environment is
@@ -333,7 +333,7 @@ exec.clean
 exec.consolelog
 ^^^^^^^^^^^^^^^
 
-.. code-block:: shell
+.. code-block:: text
 
   exec.consolelog
     A file to direct command output (stdout and stderr) to.
@@ -414,7 +414,7 @@ securelevel settings. My recommendation is this only be altered manually on a
 case-by-case basis and that "Highly secure mode" is a sane default for most use
 cases.
 
-.. code-block:: shell
+.. code-block:: text
 
   The kernel runs with five different security levels.  Any super-user
   process can raise the level, but no process can lower it.  The security
