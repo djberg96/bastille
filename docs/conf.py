@@ -28,7 +28,7 @@ source_suffix = {
 #}
 
 master_doc = 'index'
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'PDF_GENERATION_PR_NOTES.md']
 pygments_style = None
 
 # -- Options for HTML output -------------------------------------------------
